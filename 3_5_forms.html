@@ -88,114 +88,79 @@
         <!--##################START HERE#####################-->
 
         <!-- FORM -->
-        <form>
-            <!-- TEXT FIELD GROUPS -->
-            <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter name">
+        <form name="employee">
+            <div class="form-group">
+                <label for="name">Name:&nbsp;</label><input type="text" class="form-control form-control-lg" required
+                    id="name" />
             </div>
-            <div>
-                <label for="email">Email address</label>
-                <input type="email" id="email" placeholder="Enter email">
+            <div class="form-group">
+                <label for="age">age:</label><input type="number" class="form-control form-control-sm" required
+                    id="age" />
             </div>
-            <div>
-                <label for="company">Company</label>
-                <input type="text" id="company" placeholder="Enter company name">
+            <div class="form-check">
+                <label for="Gender " class="form-check-label">Gender:</label>
+                <br />
+                <label for="female" class="form-check-label">FEMALE
+                    <input type="radio" class="form-check-input" id="female" name="Gender" value="FEMALE" /></label>
+                <br />
+                <label for="male" class="form-check-label">MALE
+                    <input type="radio" class="form-check-input" id="male" name="Gender" value="MALE" /></label>
             </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Password">
+            <div class="form-group">
+                <label for="email">Email:</label><input type="email" class="form-control" required id="email" />
+                <small class="form-text">pls enter email of your teams account</small>
             </div>
-            <!-- SELECT -->
-            <div>
-                <label for="gender">Gender</label>
-                <select id="gender">
-                    <option>Male</option>
-                    <option>Female</option>
+            <div class="form-group">
+                <label for="doj">Date of Joining:</label><input class="form-control" type="date" required id="doj" />
+            </div>
+            <div class="form-group">
+                <label for="loc">Location:</label>
+                <select required class="form-control" id="loc">
+                    <option>Ahmedabad</option>
+                    <option>Ghandhinagar</option>
+                    <option>California</option>
                 </select>
+                <small class="form-text">pls select location</small>
             </div>
-            <!-- TEXTAREA -->
-            <div>
-                <label for="message">Message</label>
-                <textarea id="message" rows="3"></textarea>
-            </div>
-            <!-- FILE INPUT -->
-            <div>
-                <label for="file">File input</label>
-                <input type="file" id="file">
-                <small id="fileHelp">Max 3mb size</small>
-            </div>
-            <!-- CUSTOM FILE INPUT -->
-            <div>
-                <input type="file" id="myfile">
-                <label for="myfile">Choose file</label>
-            </div>
-            <br>
-            <br>
-            <!-- RANGE -->
-            <div>
-                <label for="membership">Membership Level</label>
-                <input type="range">
+            <div class="form-group">
+                <label for="num">Contact no:</label><input type="tel" class="form-control" required
+                    id="num" /><br /><br />
+                <input type="submit" class="btn btn-primary" value="submit" />
             </div>
 
-            <br>
-
-            <button type="submit">Submit</button>
+            <div class="form-group">
+                <label for="password">password:</label>
+                <input type="password" class="form-control" name="pass" id="password" />
+            </div>
         </form>
 
         <br>
         <br>
 
         <!-- INLINE FORM -->
-        <form>
-            <input type="text" id="username" placeholder="Enter username">
-            <input type="text" id="password" placeholder="Password">
-            <div>
-                <label>
-                    <input type="checkbox"> Remember me
+        <form class="form-inline">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="user name" />
+                <input type="password" class="form-control" placeholder="password" />
+            </div>
+            <div class="form-check">
+                <label for="check" class="form-check-label">
+                    <input type="checkbox" class="form-check-input" name="check" id="ck" />remember me
                 </label>
             </div>
-
-            <button type="submit">Submit</button>
+            <button type="submit" class="btn btn-secondary">Submit</button>
         </form>
-
-        <br>
-        <br>
-
-        <!-- FORM ROW -->
-        <form>
-            <div>
-                <div>
-                    <input type="text" placeholder="First name">
-                </div>
-                <div>
-                    <input type="text" placeholder="Last name">
+        <form class="form-row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="first name" />
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="last name" />
                 </div>
             </div>
         </form>
 
         <br>
         <br>
-
-        <!-- VALIDATION -->
-        <div>
-            <label for="username">Username</label>
-            <input type="text" id="username">
-        </div>
-        <div>
-            <label for="password">Password</label>
-            <input type="text" id="password">
-            <div>
-                Password not strong enough
-            </div>
-        </div>
-        <div>
-            <label for="password2">Confirm Password</label>
-            <input type="text" id="password2">
-            <div>
-                Password does not match
-            </div>
-        </div>
 
     </div>
     <!-- ./container -->

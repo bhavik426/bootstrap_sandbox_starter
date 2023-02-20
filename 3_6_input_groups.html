@@ -88,88 +88,65 @@
         <!--####################START HERE#####################-->
 
         <!-- BASIC INPUT GROUPS -->
-        <div>
-            <div>
-                <span>@</span>
-            </div>
-            <input type="text" placeholder="Username">
+        <div class="input-group">
+            <span class="inut-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="Username">
         </div>
-
         <br>
-
-        <div>
-            <input type="text" placeholder="Username">
-            <div>
-                <span>@something.com</span>
-            </div>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Email address">
+            <span class="inut-group-addon">@something.com</span>
         </div>
-
         <br>
-
-        <label for="basic-url">Custom URL</label>
-        <div>
-            <div>
-                <span>https://something.com/member/</span>
-            </div>
-            <input type="text">
+        <label for="profile-url">Choose Profle URL</label>
+        <div class="input-group">
+            <span class="inut-group-addon">https://something.com/memberr/</span>
+            <input type="text" class="form-control" id="profile-url">
         </div>
-
         <br>
-
-        <div>
-            <div>
-                <span>$</span>
-            </div>
-            <input type="text">
-            <div>
-                <span>.00</span>
-            </div>
+        <div class="input-group">
+            <span class="inut-group-addon">$</span>
+            <input type="text" class="form-control">
+            <span class="inut-group-addon">.00</span>
+        </div>
+        <br>
+        <div class="input-group input-group-lg">
+            <span class="inut-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="Username">
         </div>
 
         <br>
 
         <!-- CHECKBOX -->
-        <div>
-            <div>
-                <div>
-                    <input type="checkbox">
-                </div>
-            </div>
-            <input type="text">
+        <div class="input-group">
+            <span class="inut-group-addon">
+                <input class="form-control" type="checkbox">
+            </span>
+            <input class="form-control" type="text">
         </div>
 
         <br>
 
         <!-- RADIO -->
-        <div>
-            <div>
-                <div>
-                    <input type="radio">
-                </div>
-            </div>
-            <input type="text">
+        <div class="input-group">
+            <span class="inut-group-addon">
+                <input class="form-control" type="radio">
+            </span>
+            <span class="inut-group-addon">$5.00</span>
+            <input class="form-control" type="text">
         </div>
 
         <br>
 
         <!-- MULTIPLE INPUTS -->
-        <div>
-            <div>
-                <span id="">Name & Email</span>
-            </div>
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email">
+        <div class="input-group">
+            <input class="form-control" type="text" placeholder="search for...">
+            <span class="inut-group-btn">
+                <button class="btn btn-primary" type="button">search</button>
+            </span>
         </div>
 
         <br>
-
-        <!-- BUTTON ADDONS -->
-        <div>
-            <input type="text" placeholder="Find By Name...">
-            <div>
-                <button type="button">Search</button>
-            </div>
-        </div>
 
     </div>
     <!-- ./container -->

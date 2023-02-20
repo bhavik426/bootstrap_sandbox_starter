@@ -89,7 +89,7 @@
 
         <!-- VERTICAL ALIGNMENT -->
         <div class="container">
-            <div class="row" style="height:200px;border:1px #333 solid">
+            <div class="row align-item-start" style="height: 200px;border:1px #333 solid">
                 <div class="col">
                     Top Aligned Text
                 </div>
@@ -100,7 +100,10 @@
                     Top Aligned Text
                 </div>
             </div>
-            <div class="row" style="height:200px;border:1px #333 solid">
+        </div>
+    
+        <div class="container">
+            <div class="row align-item-center" style="height: 200px;border:1px #333 solid">
                 <div class="col">
                     Middle Aligned Text
                 </div>
@@ -111,7 +114,10 @@
                     Middle Aligned Text
                 </div>
             </div>
-            <div class="row" style="height:200px;border:1px #333 solid">
+        </div>
+    
+        <div class="container">
+            <div class="row align-item-end" style="height: 200px;border:1px #333 solid">
                 <div class="col">
                     Bottom Aligned Text
                 </div>
@@ -129,15 +135,15 @@
 
         <!-- VERTICAL ALIGN INDIVIDUAL COLS -->
         <div class="container">
-            <div class="row" style="height:200px;border:1px #333 solid">
-                <div class="col">
-                    Top Aligned
+            <div class="row align-item-end" style="height: 200px;border:1px #333 solid">
+                <div class="col align-self-start">
+                    Top Aligned Text
                 </div>
-                <div class="col">
-                    Middle Aligned
+                <div class="col align-self-center">
+                    Middle Aligned Text
                 </div>
-                <div class="col">
-                    Bottom Aligned
+                <div class="col align-self-end">
+                    Bottom Aligned Text
                 </div>
             </div>
         </div>
@@ -147,71 +153,107 @@
 
         <!-- HORIZONTAL ALIGNED COLS -->
         <div class="container">
-            <div class="row" style="height:200px;border:1px #333 solid">
+            <div class="row justify-content-start" style="height: 200px;border:1px #333 solid">
                 <div class="col-4">
-                    Left Aligned Text
+                   Left Aligned Text
                 </div>
                 <div class="col-4">
-                    Left Aligned Text
-                </div>
-            </div>
-            <div class="row" style="height:200px;border:1px #333 solid">
-                <div class="col-4">
-                    Center Aligned Text
-                </div>
-                <div class="col-4">
-                    Center Aligned Text
+                   Left Aligned Text
                 </div>
             </div>
-            <div class="row" style="height:200px;border:1px #333 solid">
+         </div>
+        
+         <div class="container">
+            <div class="row justify-content-center" style="height: 200px;border:1px #333 solid">
                 <div class="col-4">
-                    Right Aligned Text
+                   Center Aligned Text
                 </div>
                 <div class="col-4">
-                    Right Aligned Text
+                   Center Aligned Text
                 </div>
             </div>
-            <div class="row" style="height:200px;border:1px #333 solid">
+         </div> 
+        
+         <div class="container">
+            <div class="row justify-content-end" style="height: 200px;border:1px #333 solid">
+                <div class="col-4">
+                   Right Aligned Text
+                </div>
+                <div class="col-4">
+                   Right Aligned Text
+                </div>
+            </div>
+         </div>
+        
+         <div class="container">
+            <div class="row justify-content-around" style="height: 200px;border:1px #333 solid">
+                <div class="col-4">
+                   Content Around
+                </div>
                 <div class="col-4">
                     Content Around
                 </div>
-                <div class="col-4">
-                    Content Around
-                </div>
             </div>
-            <div class="row" style="height:200px;border:1px #333 solid">
+         </div>
+        
+         <div class="container">
+            <div class="row justify-content-between" style="height: 200px;border:1px #333 solid">
+                <div class="col-4">
+                   Content Between
+                </div>
                 <div class="col-4">
                     Content Between
                 </div>
-                <div class="col-4">
-                    Content Between
-                </div>
             </div>
-        </div>
+         </div>
 
         <br>
         <br>
 
         <!-- COLUMN WRAPPING & NO GUTTERS-->
-        <div class="row">
+        <div class="row no-gutters">
             <div class="col-9">
                 <div class="card">
-                    <div class="card-block">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, repudiandae!</p>
+                    <div class="card-body">
+                    <p>
+                        Lorem ipsum dolor sit amet. Vel ipsum repellendus aut dolorem 
+                        debitis sit ipsa saepe. Sed minus fuga sed soluta accusantium 
+                        rem quisquam molestiae. Vel ipsum assumenda quo eveniet officiis 
+                        et rerum recusandae quo porro fugiat eos iste necessitatibus 
+                        non internos sint est dolores vitae. 
+                    </p>
                     </div>
                 </div>
             </div>
+        </div>
+    
+        <div class="row no-gutters">
             <div class="col-4">
                 <div class="card">
-                    <div class="card-block">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, repudiandae!</p>
+                    <div class="card-body">
+                    <p>
+                        Lorem ipsum dolor sit amet. Vel ipsum repellendus aut dolorem 
+                        debitis sit ipsa saepe. Sed minus fuga sed soluta accusantium 
+                        rem quisquam molestiae. Vel ipsum assumenda quo eveniet officiis 
+                        et rerum recusandae quo porro fugiat eos iste necessitatibus 
+                        non internos sint est dolores vitae. 
+                    </p>
                     </div>
                 </div>
             </div>
+        </div>
+    
+        <div class="row no-gutters">
             <div class="col-6">
                 <div class="card">
-                    <div class="card-block">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, repudiandae!</p>
+                    <div class="card-body">
+                    <p>
+                        Lorem ipsum dolor sit amet. Vel ipsum repellendus aut dolorem 
+                        debitis sit ipsa saepe. Sed minus fuga sed soluta accusantium 
+                        rem quisquam molestiae. Vel ipsum assumenda quo eveniet officiis 
+                        et rerum recusandae quo porro fugiat eos iste necessitatibus 
+                        non internos sint est dolores vitae. 
+                    </p>
                     </div>
                 </div>
             </div>
